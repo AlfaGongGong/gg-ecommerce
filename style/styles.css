@@ -11,6 +11,29 @@ body {
   font-size: 16px;
 }
 
+body {
+  padding: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+div.product::-webkit-scrollbar {
+  background-color: rgb(214, 254, 255);
+  width: 6px;
+  height: 100%;
+}
+
+div.product::-webkit-scrollbar-thumb,
+div.product::-webkit-scrollbar-thumb:hover,
+div.product::-webkit-scrollbar-thumb:active {
+  background-color: rgb(238, 52, 5);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  height: 10px;
+  width: 100%;
+}
+
 .site-header {
   flex-direction: column;
   margin-bottom: 10px;
@@ -67,7 +90,7 @@ img.logo {
   -o-transition: all 0.3s ease-in-out;
 }
 
-#branding :hover {
+#branding:hover {
   color: rgb(238, 52, 5);
 }
 
@@ -277,7 +300,8 @@ li.menu-item a:hover {
   top: 35px;
   left: 20px;
 }
-.search-form label .fa-search {
+
+.fa-search {
   color: rgb(63, 87, 182);
 }
 
@@ -489,12 +513,39 @@ h1 {
   color: rgb(46, 120, 70);
   font-size: 40px;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   margin-top: 30px;
   text-transform: uppercase;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   letter-spacing: 1px;
   display: inline-block;
+}
+
+hr {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 0;
+  height: 4px;
+  background-color: rgb(238, 52, 5);
+}
+
+a.gaming,
+a.free {
+  text-align: center;
+  color: rgb(46, 120, 70);
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+img.slide-image {
+  width: 80%;
+  height: 50%;
 }
 
 li.menu-item a:hover {
@@ -504,6 +555,18 @@ li.menu-item a:hover {
 }
 
 a:hover {
+  text-decoration: none;
+  color: rgb(238, 52, 5);
+}
+
+a.gaming {
+  text-decoration: none;
+  color: rgb(63, 87, 182);
+  transition: all 0.3s ease;
+  font-size: 20px;
+  font-weight: 300;
+}
+a.gaming:hover {
   text-decoration: none;
   color: rgb(238, 52, 5);
 }
@@ -520,11 +583,14 @@ button.addToCart {
   margin-bottom: 10px;
   display: inline-block;
   text-align: center;
-  text-decoration: none;
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 300;
+}
+
+button.addToCart a {
+  text-decoration: none;
 }
 
 button.addToCart:hover {
