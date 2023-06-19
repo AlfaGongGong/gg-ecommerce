@@ -751,7 +751,7 @@ button.addToCart:hover {
 
 .product-list .product .inner-product {
   background: $background;
-  padding: 30px;
+  padding: 10px;
   border-radius: 3px;
   border: $backgroundHover solid 1px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -1060,4 +1060,39 @@ section header .all {
 
 .site-footer .social-links a {
   line-height: 2;
+}
+
+.site-footer.social-links a:hover,
+.site-footer.social-links a:focus {
+  border-color: $header;
+}
+
+.site-footer.social-links a:hover,
+.site-footer.social-links a:focus {
+  color: $text;
+}
+
+.banner {
+  img {
+    width: 100%;
+    height: 100px;
+  }
+
+  background-color: $background;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  *zoom: 1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+
+}
+
+div.figure-image a img {
+  width: 90%;
+  height: 30%;
 }
