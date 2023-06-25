@@ -736,12 +736,8 @@ button.addToCart:hover {
 .product-list {
   margin: 0 -15px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   padding: 0 15px;
   margin-bottom: 30px;
-  list-style: none;
-  overflow: hidden;
 }
 
 .product-list:after {
@@ -1095,6 +1091,10 @@ section header .all {
 }
 
 .banner {
+  width: 100%;
+  height: 150px;
+  padding: 5px;
+  margin: 10px 0px 10px 0px;
   background-color: rgb(214, 254, 255);
   margin-bottom: 30px;
   position: relative;
@@ -1107,6 +1107,14 @@ section header .all {
   height: 100px;
 }
 
+#marketingWrapper {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 div.figure-image a img {
   width: 90%;
   height: 30%;
@@ -1116,5 +1124,5 @@ div.figure-image a img {
   display: grid;
   grid-template-columns: repeat(auto-fit minmax(200px 1fr));
   grid-gap: 10px;
-  width: 33%;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
