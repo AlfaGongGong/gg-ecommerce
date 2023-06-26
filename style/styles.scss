@@ -787,6 +787,7 @@ button.addToCart:hover {
   display: flex;
   padding: 0 15px;
   margin-bottom: 30px;
+  min-width: 360px;
 }
 
 .product-list:after {
@@ -808,6 +809,7 @@ button.addToCart:hover {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   transition: 0.3s ease;
   cursor: pointer;
+  min-width: 50%;
 }
 
 .product-list .product {
@@ -835,6 +837,7 @@ button.addToCart:hover {
   border-radius: 3px;
   border: $backgroundHover solid 1px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 
 .product-list .product .inner-product a.button {
@@ -871,13 +874,14 @@ button.addToCart:hover {
   height: auto;
 }
 
-.product-list .product .product-title {
-  font-size: 18px;
-  font-size: 1.2857142857em;
+.product-title {
   color: #666a6c;
   margin: 0;
   text-align: left;
   font-weight: 400;
+  text-decoration: none;
+  font-size: larger;
+  text-size-adjust: 14px;
 }
 
 .product-list .product .product-title a {
@@ -1149,32 +1153,13 @@ section header .all {
 
 .banner {
   width: 100%;
-  height: 150px;
+  height: 300px;
   padding: 5px;
   margin: 10px 0px 10px 0px;
-
-  img {
-    width: 100%;
-    height: 100px;
-  }
-
-  background-color: $background;
-  margin-bottom: 30px;
-  position: relative;
-  z-index: 1;
-  *zoom: 1;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
-#marketingWrapper {
+#asusBanner {
   width: 100%;
-  height: 300px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  height: 100%;
 }
 
 div.figure-image a img {
