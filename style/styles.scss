@@ -3,193 +3,29 @@ $mobileL: 425px;
 $tablet: 768px;
 $desktop: 1024px;
 
-@mixin mobile {
-  @media (max-width: #{$mobile}) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (max-width: #{$tablet}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (max-width: #{$desktop}) {
-    @content;
-  }
-}
-
 /* Color Theme light */
 $background: rgba(214, 254, 255, 1);
 $text: rgba(63, 87, 182, 1);
 $backgroundHover: rgba(12, 1, 5, 1);
 $textHover: rgba(238, 52, 5, 1);
 $header: rgba(46, 120, 70, 1);
-/* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-html,
-body {
-  scroll-behavior: smooth;
+
+html {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0;
-  background: $background;
-  color: $text;
-  font-size: 16px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 body {
-  padding: 30px;
-  font-family: "Montserrat", sans-serif;
-}
-
-div.product::-webkit-scrollbar {
   background-color: $background;
-  width: 6px;
-  height: 100%;
-}
-
-div.product::-webkit-scrollbar-thumb,
-div.product::-webkit-scrollbar-thumb:hover,
-div.product::-webkit-scrollbar-thumb:active {
-  background-color: $textHover;
-  border-radius: 10px;
-  background-clip: padding-box;
-  border: 3px solid transparent;
-  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
-  height: 10px;
+  color: $text;
   width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
 .site-header {
   flex-direction: column;
   margin-bottom: 10px;
@@ -320,12 +156,10 @@ li.menu-item a:hover {
 }
 
 .main-navigation {
-  *zoom: 1;
-  margin-top: 30px;
-  position: relative;
-  z-index: 999;
-  clear: both;
+  margin: 30px 10px 30px 10px;
+
   width: 100%;
+  min-width: $mobile;
   background-color: $backgroundHover;
   border-radius: 3px;
   display: flex;
@@ -523,6 +357,7 @@ label input {
   display: block;
   overflow: hidden;
   height: 0;
+  min-width: 100%;
 }
 
 .home-slider .slides li {
@@ -788,6 +623,8 @@ button.addToCart:hover {
   padding: 0 15px;
   margin-bottom: 30px;
   min-width: 360px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .product-list:after {
@@ -914,6 +751,7 @@ form .product-list .product input[type="reset"] {
 
 section {
   padding: 40px 0;
+  width: 100%;
 }
 
 section header {
